@@ -3,14 +3,15 @@ input.onButtonPressed(Button.A, function () {
         basic.pause(1000)
         tid += 1
     }
+    basic.pause(100)
+    B = 0
 })
 input.onButtonPressed(Button.AB, function () {
+    B = 1
     tid = 0
-    B = 0
 })
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(tid)
-    B = 1
 })
 let tid = 0
 let B = 0
